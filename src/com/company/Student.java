@@ -30,6 +30,15 @@ public class Student implements Comparable<Student>{
         this.yearOfBorn = yearOfBorn;
     }
 
+    public Student() {
+    }
+
+    public Student(String firstname, String lastname, int yearOfBorn) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.yearOfBorn = yearOfBorn;
+    }
+
     @Override
     public int compareTo(Student o) {
         if(yearOfBorn < o.getYearOfBorn()){
